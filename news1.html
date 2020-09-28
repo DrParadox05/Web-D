@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="contaier">
+            <!--Collapsible Menu (Navbar)-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand h1" href="#">The News</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#newsMenu" aria-controls="newsMenu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="newsMenu">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Home</a>
+                        <a class="nav-item nav-link" href="#">News</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                    </div>
+                </div>
+            </nav>
+            <!--Some other news links-->
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-list">
+                            <a class="nav-link" href="#">New object1</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="nav-link" href="#">New object2</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="nav-link" href="#">New object3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-fluid" src="https://images.unsplash.com/photo-1584483766114-2cea6facdf57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                            <div class="h3">CORONA VIRUS</div>
+                            <p>
+                                It is a very big problem It is a very big problem It is a very big problem
+                                It is a very big problem It is a very big problem It is a very big problem 
+                                It is a very big problem It is a very big problem It is a very big problem 
+                                It is a very big problem It is a very big problem It is a very big problem 
+                                It is a very big problem It is a very big problem It is a very big problem 
+                                It is a very big problem It is a very big problem It is a very big problem 
+                                It is a very big problem It is a very big problem It is a very big problem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Contact Form-->
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="h5">Contact Form</div>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input class="form-control" type="text" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input class="form-control" type="email" placeholder="Enter Email">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
