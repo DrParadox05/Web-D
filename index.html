@@ -5,7 +5,9 @@
     </head>
     <body>
         <div id="app">
-            <mycomponent></mycomponent>
+            <input type="text" ref="principal">
+            <button v-on:click="interest()">Calculate</button>
+            <p>{{ intr }}</p>
         </div>
         
         <script type="text/javascript" src="index.js"></script>
