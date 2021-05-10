@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ message }}
+    <h1>{{ message }}</h1>
     <students></students>
   </div>
 
@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style>
-
+h1{
+  color:red;
+}
 </style>
