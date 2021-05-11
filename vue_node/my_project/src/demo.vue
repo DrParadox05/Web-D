@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Heading from demo component</h2>
-    <p v-for="student in students">{{student}}</p>
+
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
 
   data () {
     return{
-      students:['Tom','John','Rob']
+
     }
   }
 }
