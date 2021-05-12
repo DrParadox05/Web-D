@@ -1,15 +1,15 @@
 <template>
   <div>
     <h1>{{ message }}</h1>
-    <ranodm></ranodm>
-    <student></student>
+    <random></random>
+    <students></students>
   </div>
 
 </template>
 
 <script>
 import random from './components/random.vue'
-import students from './/components/students.vue'
+import students from './components/students.vue'
 export default {
   components:{
     'random':random,

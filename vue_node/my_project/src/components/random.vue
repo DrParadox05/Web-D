@@ -1,16 +1,20 @@
 <template>
-  <h1>{{hdr}}</h1>
+  <h1>{{ hdr }}</h1>
 </template>
 
 <script>
-export default{
-  data(){
-    return{
-      hdr:'This is the header'
+export default {
+  data () {
+    return {
+      hdr: 'This is from random'
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
+  h1{
+    color:aqua;
+  }
 </style>
+
