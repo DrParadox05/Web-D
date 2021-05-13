@@ -6,13 +6,10 @@
 
 <script>
 export default{
+  props:['students'],
   data(){
     return{
-      students:[
-        {name:'Jim',class:'5'},
-        {name:'Tom',class:'7'},
-        {name:'John',class:'9'},
-        {name:'Rob',class:'12'},
+
       ]
     }
   }

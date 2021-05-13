@@ -2,7 +2,7 @@
   <div>
     <h1>{{ message }}</h1>
     <random></random>
-    <students></students>
+    <students v-bind:students="students"></students>
   </div>
 
 </template>
@@ -18,7 +18,14 @@ export default {
   name: 'app',
   data () {
     return {
-      message: 'Hello There!'
+      message: 'Hello There!',
+
+      students:[
+        {name:'Jim',class:'5'},
+        {name:'Tom',class:'7'},
+        {name:'John',class:'9'},
+        {name:'Rob',class:'12'},
+      ],
     }
   }
 }
