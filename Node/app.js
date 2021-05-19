@@ -30,7 +30,13 @@ var getDouble = function(n){
 console.log(getSq(getDouble(10)));
 console.log(getDouble(getSq(10)));
 
-//modules
-var calcSq = require('./math')
+//Modules
+var calcSq = require('./square')
 
 calcSq(10);
+
+//Multiple modules(multiple functions in a module)
+var math = require('./math')
+
+math.calcSqr(10);
+math.calcCube(5);
