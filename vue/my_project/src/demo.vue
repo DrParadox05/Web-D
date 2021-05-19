@@ -1,7 +1,7 @@
 <template>
   <div>
+    <h1>Is it possible</h1>
     <h2>Heading from demo component</h2>
-
   </div>
 </template>
 
