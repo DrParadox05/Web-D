@@ -3,7 +3,7 @@ console.log('Hello There');
 
 setTimeout(function(){
     console.log('Times Up')
-},5000);
+},3000);
 
 //Function Expressions
 // 1- Normally defining a function
@@ -29,3 +29,8 @@ var getDouble = function(n){
 
 console.log(getSq(getDouble(10)));
 console.log(getDouble(getSq(10)));
+
+//modules
+var calcSq = require('./math')
+
+calcSq(10);
