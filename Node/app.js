@@ -42,12 +42,12 @@ math.calcSqr(10);
 math.calcCube(5);
 
 //Event emitter
-var even = require('events');
+var events = require('events');
 
-var emi = new even.EventEmitter();
+var emitter = new events.EventEmitter();
 
-emi.on('publishVideo',function(mess){
+emitter.on('publishVideo',function(mess){
     console.log(mess);
 });
 
-emi.emit('publishVideo',"ABC has posted a new video");
+emitter.emit('publishVideo',"ABC has posted a new video");
