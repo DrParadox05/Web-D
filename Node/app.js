@@ -40,3 +40,14 @@ var math = require('./math')
 
 math.calcSqr(10);
 math.calcCube(5);
+
+//Event emitter
+var even = require('events');
+
+var emi = new even.EventEmitter();
+
+emi.on('publishVideo',function(mess){
+    console.log(mess);
+});
+
+emi.emit('publishVideo',"ABC has posted a new video");
