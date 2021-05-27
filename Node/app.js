@@ -70,4 +70,4 @@ var fs = require('fs');
 fs.unlink('demo.txt'); //Removes the demo file
 fs.mkdir('demo'); //Creates a direcatory
 fs.rmdir('demo'); //Removse a directory 
-//Removing and creatitng directory can be used with Sync as well A/C to use */
+//Removing and creatitng directory can be used with Sync as well according to use */
