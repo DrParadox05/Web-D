@@ -1,4 +1,4 @@
-//Ways to show output using node
+/* //Ways to show output using node
 console.log('Hello There');
 
 setTimeout(function(){
@@ -50,4 +50,17 @@ emitter.on('publishVideo',function(mess){
     console.log(mess);
 });
 
-emitter.emit('publishVideo',"ABC has posted a new video");
+emitter.emit('publishVideo',"ABC has posted a new video"); 
+
+//Reading and writing files
+// 1- Synchronous
+var fs = require('fs');
+var r = fs.readFileSync('demo.txt','utf8');
+fs.writeFileSync('demo.txt', 'This is some new text');
+console.count(r)
+
+// 2- Asynchronous
+fs.readFile('demo.txt','utf8',function(err,data){
+    console.log(data);
+});
+console.log('Hey There!');
