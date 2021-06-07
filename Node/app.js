@@ -79,7 +79,7 @@ var server = http.createServer(function(request,response){
     response.end('Hello There!!');
 });
 
-server.listen(5000,'127.0.0.1'); */
+server.listen(5000,'127.0.0.1'); 
 
 //Readableand Writable  Stream
 var fs = require('fs');
@@ -91,4 +91,19 @@ readStream.on('data',function(d){
     writeStream.write(d);
     chunk_count++;
     console.log(chunk_count);
+});*/
+
+var fs = require("fs");
+var http = require("http");
+
+var server = http.createServer(function (request, response) {
+  response.writeHead(200, { "Content-Type": "text/html" });
+  //var rS = fs.createReadStream(__dirname + "/index.html");
+  //rS.pipe(response);
+  var studentObject = {
+    name: "John",
+    city: "New jojo",
+  };
+  response.end(JSON.stringify(studentObject));
 });
+server.listen(5000, "127.0.0.1");
