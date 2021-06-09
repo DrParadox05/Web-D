@@ -97,13 +97,18 @@ var fs = require("fs");
 var http = require("http");
 
 var server = http.createServer(function (request, response) {
-  response.writeHead(200, { "Content-Type": "text/html" });
+  if ((request.url === "/home") | (request.url === "/")) {
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.end("This is the home page");
+  } else if (request.url === "/profile") {
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.end("This is profile page");
+  } else {
+    response.writeHead(404, { "Content-Type": "text/html" });
+    fs.createReadStream(__dirname + "/error.html").pipe(response);
+  }
+  //response.writeHead(200, { "Content-Type": "text/html" });
   //var rS = fs.createReadStream(__dirname + "/index.html");
   //rS.pipe(response);
-  var studentObject = {
-    name: "John",
-    city: "New jojo",
-  };
-  response.end(JSON.stringify(studentObject));
 });
 server.listen(5000, "127.0.0.1");
