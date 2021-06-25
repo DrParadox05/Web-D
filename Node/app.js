@@ -91,7 +91,7 @@ readStream.on('data',function(d){
     writeStream.write(d);
     chunk_count++;
     console.log(chunk_count);
-});*/
+})
 
 var fs = require("fs");
 var http = require("http");
@@ -111,4 +111,17 @@ var server = http.createServer(function (request, response) {
   //var rS = fs.createReadStream(__dirname + "/index.html");
   //rS.pipe(response);
 });
-server.listen(5000, "127.0.0.1");
+server.listen(5000, "127.0.0.1");*/
+
+//Express
+var express = require("express");
+var app = express();
+app.get("/home", function (req, res) {
+  res.send("This is my homepage");
+});
+
+app.get("/aboutus", function (req, res) {
+  res.send("This is about us page");
+});
+
+app.listen(5000);
