@@ -124,4 +124,8 @@ app.get("/aboutus", function (req, res) {
   res.send("This is about us page");
 });
 
+app.get("/posts/:id", function (req, res) {
+  res.send("This is post: " + req.params.id);
+});
+
 app.listen(5000);
