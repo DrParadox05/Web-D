@@ -116,6 +116,7 @@ server.listen(5000, "127.0.0.1");*/
 //Express
 var express = require("express");
 var app = express();
+app.set("view engine", "ejs");
 app.get("/home", function (req, res) {
   res.send("This is my homepage");
 });
@@ -125,7 +126,8 @@ app.get("/aboutus", function (req, res) {
 });
 
 app.get("/posts/:id", function (req, res) {
-  res.send("This is post: " + req.params.id);
+  //res.send("This is post: " + req.params.id);
+  res.render("blog", { blog_post: req.params.id });
 });
 
 app.listen(5000);
